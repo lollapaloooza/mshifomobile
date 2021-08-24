@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header-text">Запись на приём</h1>
+    </header>
+    <section>
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Фамилия:<span style="color: red;">*</span></h2>
+                <input class="form-control" type="text" placeholder="Фамилия">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Имя:</h2>
+                <input class="form-control" type="text" placeholder="Имя">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Отчество:</h2>
+                <input class="form-control" type="text" placeholder="Отчество">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Дата рождения:</h2>
+                <input class="form-control" type="text" placeholder="мм.дд.гггг">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Телефон:<span style="color: red;">*</span></h2>
+                <input class="form-control" type="text" placeholder="+7(999)99-99">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Пол:</h2>
+                <div style="display: flex;">
+                    <label><input class="form-check-input mt-0" style="margin-right: 5px;" type="radio" name="gender">мужской</label>
+                    <label><input class="form-check-input mt-0" style="margin-left: 10px; margin-right: 5px;" type="radio" name="gender">женский</label>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Категория льгот:</h2>
+                <select style="height: 38px; width: 278px;">
+                        <option value="r1">Без льгот</option>
+                    </select>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Статус<span style="color: red;">*</span></h2>
+                <select style="height: 38px; width: 278px;">
+                        <option value="r2">Нет</option>
+                    </select>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Тип<span style="color: red;">*</span></h2>
+                <div class="btns">
+                    <button class="btn btn-outline-secondary">Первичный</button>
+                    <button class="btn btn-outline-secondary">Повторный</button>
+                    <button class="btn btn-outline-secondary end">Aparat 1</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Время(Начало)</h2>
+                <input class="form-control" type="text" placeholder="2021-08-21 08:00:00">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Длительность:</h2>
+                <ul>
+                    <a href="#" class="corection btn btn-primary">5</a>
+                    <a href="#" class="corection btn btn-primary">10</a>
+                    <a href="#" class="corection btn btn-primary">15</a>
+                    <a href="#" class="corection btn btn-primary">20</a>
+                    <a href="#" class="corection btn btn-primary">30</a>
+                    <a href="#" class="corection btn btn-primary">40</a>
+                    <a href="#" class="corection btn btn-primary">60</a>
+                    <a href="#" class="corection btn btn-primary">90</a>
+                    <a href="#" class="corection btn btn-primary">120</a>
+                    <ul>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Время(Конец)</h2>
+                <input class="form-control" type="text" placeholder="2021-08-21 08:05:00" disabled>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Врач</h2>
+                <h2 class="service-name">Терапевт: Кузьмина Надежда Викторовна</h2>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Услуга<span style="color: red;">*</span></h2>
+                <select style="height: 38px;">
+                        <option value="r2">Нет</option>
+                        <option value="r2">МАНИПУЛЯЦИИ</option>
+                        <option value="r2">C02 корекция ногтя</option>
+                        <option value="r2">C02 ФРАКЦИОННАЯ ШЛИФОВКА</option>
+                    </select>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Кабинет</h2>
+                <input class="form-control" type="text" placeholder="Название кабинета или № кабинета">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Имеется ли у Вас направление?:</h2>
+                <input class="form-control" type="text" placeholder="ФИО врача или номер телефона">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">ID врача:<span style="color: red;">*</span></h2>
+                <input class="form-control" type="text" placeholder="ID врача">
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-wrapper">
+                <h2 class="service-name">Дополнительно</h2>
+                <textarea class="form-control" name="" id="" cols="35" rows="5"></textarea>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="color-bar">
+            <p class="color-record">Цвет записи</p>
+            <div class="colors">
+                <a href="#">
+                    <div class="box red"></div>
+                </a>
+                <a href="#">
+                    <div class="box crimson"></div>
+                </a>
+                <a href="#">
+                    <div class="box pink"></div>
+                </a>
+                <a href="#">
+                    <div class="box purple"></div>
+                </a>
+                <a href="#">
+                    <div class="box darkblue"></div>
+                </a>
+                <a href="#">
+                    <div class="box blue"></div>
+                </a>
+                <a href="#">
+                    <div class="box lightblue"></div>
+                </a>
+                <a href="#">
+                    <div class="box skyblue"></div>
+                </a>
+            </div>
+        </div>
+        <div class="buttons-footer">
+            <a class="close" href="#">Закрыть окно</a>
+            <a class="create" href="#">Записаться</a>
+        </div>
+    </footer>
+</body>
+
+</html>

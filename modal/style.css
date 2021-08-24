@@ -1,282 +1,224 @@
-*{
-    margin: 0;
-}
-body{
-    font-family: sans-serif;
-}
-.user{
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    margin-bottom: 8px;
-    margin-top: 5px;
-}
-.profile{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.link-add{
-    position: absolute;
-    left: 45%;
-    bottom: 26%;
-}
-.name{
-    font-size: 8px;
-    font-family: sans-serif;
-    text-align: center;
-}
-.wrapper-user{
-    width: 100%;
-}
-.progress{
-    width: 40px;
-    background-color: black;
-    height: 4px;
-    border-radius: 10px;
-}
-.no-progress{
-    width: 95px;
-    background-color: gray;
-    border-radius: 10px;
-}
-.progress-bar{
-    margin-top: 4px;
-    display: flex;
-    justify-content: center;
-}
-table {
-    font-family: "Fraunces", serif;
-    font-size: 125%;
-    white-space: nowrap;
-    margin: 0;
-    border: none;
-    border-collapse: collapse;
-    border-spacing: 0;
-    table-layout: fixed;
-  }
-  table td,
-  table th {
-    border-bottom: 1px solid rgb(201, 200, 200);
-    padding: 0.5rem 1rem;
-  }
-  table th{
-    border: 1px solid black
-  }
-  .doctor {
-    padding: 0;
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 30vw;
-    background: white;
-    border: none;
-
-  }
-  table td {
-    padding: 0;
-    background: #fff;
-    text-align: center;
-    vertical-align: text-top;
-    height: 130px;
-    padding-left: 1px;
-    padding-right: 1px;
-    border: none;
-    position: relative;
-  }
-  .add{
-    padding: 0;
-    padding-bottom: 3px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    left: 1%;
-    background-color: white;
-  }
-  .time {
-    font-weight: 100;
-    text-align: right;
-    position: relative;
-    width: 10px;
-    padding: 0 4px;
-    border: none;
-    color: rgb(116, 114, 114);
-  }
-  .doctor:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-  }
-  tbody tr th.time {
-    position: sticky;
-    left: 0;
-    background: white;
-    z-index: 1;
-    text-align: right;
-    vertical-align: top;
-    width: 10px;
-    font-weight: 100;
-    font-size: 16px;
-  }
-  .rows {
-    border-bottom: 1px solid rgb(221, 221, 221);
-    height: calc(100%/4);
-    max-height: calc(100%/4);
-    width: 100%;
-  }
-  .top{
-    border-top: 1px solid rgb(207, 207, 207);
-  }
-  .card{
-      position: absolute;
-      width: 100%;
-      border-radius: 6px;
-      top: 0;
-      left: 0;
-  }
-  .card-wrapper{
-      border-radius: 8px;
-  }
-  .header{
-      width: 100%;
-      background-color: rgb(2, 197, 51);
-      display: flex;
-      justify-content: space-between;
-      padding: 5px 0;
-      border-top-right-radius: 5px;
-      border-top-left-radius: 5px;
-  }
-  .header-text{
-      color: white;
-      text-align: left;
-      font-size: 14px;
-      font-family: sans-serif;
-      margin-left: 4%;
-  }
-  .icon-clock{
-    background-color: white; 
-    border-radius: 50%;
-    margin-right: 4%;
-  }
-  .name-card{
-      font-family: sans-serif;
-      font-size: 16px;
-      margin-left: 3%;
-      margin-top: 5px;
-  }
-  .name-card:nth-child(2){
-      margin-top: 0;
-  }
-  .body{
-      background-color: rgb(248, 248, 71);
-      height: 100%;
-      text-align: left;
-      display: flex;
-      flex-direction: column; 
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-}
-  .new{
-      color: white;
-      border-radius: 5px;
-      background-color: rgb(2, 2, 54);
-      padding: 3px 1px;
-      font-size: 10px;
-      width: 20px;
-      font-family: sans-serif;
-      font-weight: 100;
-      vertical-align: middle;
-      margin-left: 4%;
-  }
-  .phone-card{
-      font-size: 12px;
-      font-family: sans-serif;
-      margin-bottom: 3px;
-      margin-left: 4%;
-      margin-top: 5px;
-  }
-  .description{
-      font-family: sans-serif;
-      font-size: 14px;
-      margin-top: 3px;
-      margin-bottom: 5px;
-      font-weight: 600;
-      margin-left: 4%;
-  }
-  .half{
-      width: 50%;
-      overflow: hidden;
-  }
-  .second{
-      top: 0;
-      left: 50%;
-  }
-@media only screen and (min-width: 600px) {
-    .add{
-        left: 1%;
-    }
-    .half .description{
-        font-size: 7.6px;
-        margin-bottom: 12px;
-    }
-}
-@media only screen and (max-width: 469px) {
-    .name{
-        font-size: 9px;
-    }
-    .half .description{
-        font-size: 7.6px;
-        margin-bottom: 12px;
-    }
-}
-@media only screen and (max-width: 350px) {
-    .name{
-        font-size: 9px;
-    }
-    .user{
-        width: 25px;
-        height: 25px;
-        margin-bottom: 6px;
-    }
-    .half .description{
-        font-size: 7.6px;
-        margin-bottom: 12px;
-    }
-}
-@media only screen and (min-width: 470px) {
-    .name{
-        font-size: 10px;
-    }
-    .half .description{
-        font-size: 7.6px;
-        margin-bottom: 12px;
-    }
-}
-@media only screen and (min-width: 570px) {
-    .name{
-        font-size: 11px;
-    }
-    .half .description{
-        font-size: px;
-        margin-bottom: 12px;
-    }
-}
-@media only screen and (min-width: 700px){
-    .time{
-        font-size: 18;
-    }
-    .user{
-        width: 35px;
-        height: 35px;
-    }
-    .name{
-        font-size: 12px;
-    }
-    .progress-bar{
-        margin-top: 7px;
-    }
-}
+ * {
+     margin: 0;
+ }
+ 
+ body {
+     font-family: sans-serif;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ header {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+     border-bottom: 1px solid rgb(202, 202, 202);
+ }
+ 
+ .header-text {
+     font-size: 18px;
+     font-family: sans-serif;
+ }
+ 
+ .service {
+     padding-bottom: 12px;
+     border-bottom: 1px solid rgb(235, 235, 235);
+     padding-top: 12px;
+     height: auto;
+     margin-right: 4%;
+ }
+ 
+ .service-wrapper {
+     margin-left: 4%;
+ }
+ 
+ .service-name {
+     font-weight: 400;
+     font-size: 15px;
+     color: black;
+     padding-bottom: 5px;
+ }
+ 
+ .service:last-child {
+     border-bottom: none;
+ }
+ 
+ .colors {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 4%;
+ }
+ 
+ .box {
+     width: 30px;
+     height: 30px;
+     border-radius: 5px;
+ }
+ 
+ .red {
+     background-color: red;
+ }
+ 
+ .crimson {
+     background-color: crimson;
+ }
+ 
+ .pink {
+     background-color: rgb(143, 12, 125);
+ }
+ 
+ .purple {
+     background-color: rgb(59, 0, 59);
+ }
+ 
+ .darkblue {
+     background-color: rgb(13, 13, 148);
+ }
+ 
+ .blue {
+     background-color: rgb(0, 92, 179);
+ }
+ 
+ .lightblue {
+     background-color: rgb(0, 142, 189);
+ }
+ 
+ .skyblue {
+     background-color: rgb(97, 208, 252);
+ }
+ 
+ .color-record {
+     margin-left: 4%;
+     color: rgb(156, 155, 155);
+     font-size: 11.5px;
+     margin-top: 6px;
+     margin-bottom: 15px;
+ }
+ 
+ footer {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+     background-color: white;
+     box-shadow: 0px -1px 6px -4px black;
+ }
+ 
+ .color-bar {
+     border-bottom: 1px solid rgb(235, 235, 235);
+     width: 100%;
+     padding-bottom: 5px;
+ }
+ 
+ .buttons-footer {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 15px;
+     padding-bottom: 4px;
+ }
+ 
+ .create {
+     width: 44%;
+     background-color: rgb(0, 131, 218);
+     text-align: center;
+     color: white;
+     padding: 17px 0;
+     border-radius: 7px;
+     font-weight: bold;
+ }
+ 
+ .close {
+     width: 44%;
+     background-color: rgb(253, 36, 36);
+     text-align: center;
+     color: white;
+     padding: 17px 0;
+     border-radius: 7px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .create:hover {
+     color: rgb(231, 231, 231);
+ }
+ 
+ ul {
+     list-style: none;
+     padding-left: 0;
+ }
+ 
+ .list-btns {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .btn-list {
+     padding: 7px 0;
+     width: 30px;
+     background-color: rgb(224, 224, 224);
+     border: rgb(190, 190, 190) 1px solid;
+     text-align: center;
+     margin-right: 3px;
+     margin-bottom: 3px;
+ }
+ 
+ .btn-list:hover {
+     background-color: rgb(0, 147, 167);
+     color: white;
+ }
+ 
+ section {
+     margin-bottom: 150px;
+ }
+ 
+ label {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .btn {
+     margin-top: 4px;
+ }
+ 
+ .corection {
+     width: 40px;
+     padding-left: 0;
+     padding-right: 0;
+ }
+ 
+ @media only screen and (min-width: 380px) {
+     .header-text {
+         font-size: 18px;
+     }
+ }
+ 
+ @media only screen and (min-width: 440px) {
+     .box {
+         width: 35px;
+         height: 35px;
+     }
+     .header-text {
+         font-size: 18px;
+     }
+ }
+ 
+ @media only screen and (min-width: 560px) {
+     .box {
+         width: 40px;
+         height: 40px;
+     }
+     .color-record {
+         font-size: 16px;
+     }
+     .header-text {
+         font-size: 18px;
+     }
+     section {
+         margin-bottom: 160px;
+     }
+ }
