@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.header-text{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.service{
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding-top: 12px;
+    height: auto;
+    margin-right: 4%;
+}
+.service-wrapper{
+    margin-left: 4%;
+}
+.service-name{
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    padding-bottom: 5px;
+}
+.service:last-child{
+    border-bottom: none;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4%;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.red{
+    background-color: red;
+}
+.crimson{
+    background-color: crimson;
+}
+.pink{
+    background-color: rgb(143, 12, 125);
+}
+.purple{
+    background-color: rgb(59, 0, 59);
+}
+.darkblue{
+    background-color: rgb(13, 13, 148);
+}
+.blue{
+    background-color: rgb(0, 92, 179);
+}
+.lightblue{
+    background-color: rgb(0, 142, 189);
+}
+.skyblue{
+    background-color: rgb(97, 208, 252);
+}
+.color-record{
+    margin-left: 4%;
+    color: rgb(156, 155, 155);
+    font-size: 11.5px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px -1px 6px -4px black;
+}
+.color-bar{
+    border-bottom: 1px solid rgb(235, 235, 235);
+    width: 100%;
+    padding-bottom: 5px;
+}
+.buttons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-bottom: 4px;
+}
+.create{
+    width: 44%;
+    background-color: rgb(0, 131, 218);
+    text-align: center;
+    color: white;
+    padding: 17px 0;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.close{
+    width: 44%;
+    background-color: rgb(253, 36, 36);
+    text-align: center;
+    color: white;
+    padding: 17px 0;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.close:hover, .create:hover{
+    color: rgb(231, 231, 231);
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.list-btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-list{
+    padding: 7px 0;
+    width: 30px;
+    background-color: rgb(224, 224, 224);
+    border: rgb(190, 190, 190) 1px solid;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.btn-list:hover{
+    background-color: rgb(0, 147, 167);
+    color: white;
+}
+section{
+    margin-bottom: 150px;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin-top: 4px;
+}
+.corection{
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+@media only screen and (min-width: 380px){
+    .header-text{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 440px){
+    .box{
+        width: 35px;
+        height: 35px;
+    }
+    .header-text{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 560px){
+    .box{
+        width: 40px;
+        height: 40px;
+    }
+    .color-record{
+        font-size: 16px;
+    }
+    .header-text{
+        font-size: 18px;
+    }
+    section{
+        margin-bottom: 160px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-text">Запись на приём</h1>
+    </header>
+    <section>
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Фамилия:<span style="color: red;">*</span></h2>
+                    <input class="form-control" type="text" placeholder="Фамилия">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Имя:</h2>
+                    <input  class="form-control" type="text" placeholder="Имя">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Отчество:</h2>
+                    <input class="form-control" type="text" placeholder="Отчество">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Дата рождения:</h2>
+                    <input class="form-control" type="text" placeholder="мм.дд.гггг">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Телефон:<span style="color: red;">*</span></h2>
+                    <input class="form-control" type="text" placeholder="+7(999)99-99">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Пол:</h2>
+                    <div style="display: flex;">
+                        <label><input class="form-check-input mt-0" style="margin-right: 5px;" type="radio" name="gender">мужской</label>
+                        <label><input class="form-check-input mt-0" style="margin-left: 10px; margin-right: 5px;" type="radio" name="gender">женский</label>
+                    </div>    
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Категория льгот:</h2>
+                    <select style="height: 38px; width: 278px;">
+                        <option value="r1">Без льгот</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Статус<span style="color: red;">*</span></h2>
+                    <select style="height: 38px; width: 278px;">
+                        <option value="r2">Нет</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Тип<span style="color: red;">*</span></h2>
+                    <div class="btns">
+                        <button class="btn btn-outline-secondary">Первичный</button>
+                        <button class="btn btn-outline-secondary">Повторный</button>
+                        <button class="btn btn-outline-secondary end">Aparat 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Время(Начало)</h2>
+                    <input  class="form-control" type="text" placeholder="2021-08-21 08:00:00">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Длительность:</h2>
+                    <ul>
+                        <a href="#" class="corection btn btn-primary">5</a>
+                        <a href="#" class="corection btn btn-primary">10</a>
+                        <a href="#" class="corection btn btn-primary">15</a>
+                        <a href="#" class="corection btn btn-primary">20</a>
+                        <a href="#" class="corection btn btn-primary">30</a>
+                        <a href="#" class="corection btn btn-primary">40</a>
+                        <a href="#" class="corection btn btn-primary">60</a>
+                        <a href="#" class="corection btn btn-primary">90</a>
+                        <a href="#" class="corection btn btn-primary">120</a>
+                    <ul>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Время(Конец)</h2>
+                    <input class="form-control" type="text" placeholder="2021-08-21 08:05:00" disabled>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Врач</h2>
+                    <h2 class="service-name">Терапевт: Кузьмина Надежда Викторовна</h2>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Услуга<span style="color: red;">*</span></h2>
+                    <select style="height: 38px;">
+                        <option value="r2">Нет</option>
+                        <option value="r2">МАНИПУЛЯЦИИ</option>
+                        <option value="r2">C02 корекция ногтя</option>
+                        <option value="r2">C02 ФРАКЦИОННАЯ ШЛИФОВКА</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Кабинет</h2>
+                    <input class="form-control" type="text" placeholder="Название кабинета или № кабинета">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Имеется ли у Вас направление?:</h2>
+                    <input class="form-control" type="text" placeholder="ФИО врача или номер телефона">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">ID врача:<span style="color: red;">*</span></h2>
+                    <input class="form-control" type="text" placeholder="ID врача">
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-wrapper">
+                    <h2 class="service-name">Дополнительно</h2>
+                    <textarea class="form-control" name="" id="" cols="35" rows="5"></textarea>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="color-bar">
+            <p class="color-record">Цвет записи</p>
+            <div class="colors">
+                <a href="#"><div class="box red"></div></a>
+                <a href="#"><div class="box crimson"></div></a>
+                <a href="#"><div class="box pink"></div></a>
+                <a href="#"><div class="box purple"></div></a>
+                <a href="#"><div class="box darkblue"></div></a>
+                <a href="#"><div class="box blue"></div></a>
+                <a href="#"><div class="box lightblue"></div></a>
+                <a href="#"><div class="box skyblue"></div></a>
+            </div>
+        </div>
+        <div class="buttons-footer">
+            <a class="close" href="#">Закрыть окно</a>
+            <a class="create" href="#">Записаться</a>
+        </div>
+    </footer>
+</body>
+</html>
