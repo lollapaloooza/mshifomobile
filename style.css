@@ -1,0 +1,224 @@
+ * {
+     margin: 0;
+ }
+ 
+ body {
+     font-family: sans-serif;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ header {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+     border-bottom: 1px solid rgb(202, 202, 202);
+ }
+ 
+ .header-text {
+     font-size: 18px;
+     font-family: sans-serif;
+ }
+ 
+ .service {
+     padding-bottom: 12px;
+     border-bottom: 1px solid rgb(235, 235, 235);
+     padding-top: 12px;
+     height: auto;
+     margin-right: 4%;
+ }
+ 
+ .service-wrapper {
+     margin-left: 4%;
+ }
+ 
+ .service-name {
+     font-weight: 400;
+     font-size: 15px;
+     color: black;
+     padding-bottom: 5px;
+ }
+ 
+ .service:last-child {
+     border-bottom: none;
+ }
+ 
+ .colors {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 4%;
+ }
+ 
+ .box {
+     width: 30px;
+     height: 30px;
+     border-radius: 5px;
+ }
+ 
+ .red {
+     background-color: red;
+ }
+ 
+ .crimson {
+     background-color: crimson;
+ }
+ 
+ .pink {
+     background-color: rgb(143, 12, 125);
+ }
+ 
+ .purple {
+     background-color: rgb(59, 0, 59);
+ }
+ 
+ .darkblue {
+     background-color: rgb(13, 13, 148);
+ }
+ 
+ .blue {
+     background-color: rgb(0, 92, 179);
+ }
+ 
+ .lightblue {
+     background-color: rgb(0, 142, 189);
+ }
+ 
+ .skyblue {
+     background-color: rgb(97, 208, 252);
+ }
+ 
+ .color-record {
+     margin-left: 4%;
+     color: rgb(156, 155, 155);
+     font-size: 11.5px;
+     margin-top: 6px;
+     margin-bottom: 15px;
+ }
+ 
+ footer {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+     background-color: white;
+     box-shadow: 0px -1px 6px -4px black;
+ }
+ 
+ .color-bar {
+     border-bottom: 1px solid rgb(235, 235, 235);
+     width: 100%;
+     padding-bottom: 5px;
+ }
+ 
+ .buttons-footer {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 15px;
+     padding-bottom: 4px;
+ }
+ 
+ .create {
+     width: 44%;
+     background-color: rgb(0, 131, 218);
+     text-align: center;
+     color: white;
+     padding: 17px 0;
+     border-radius: 7px;
+     font-weight: bold;
+ }
+ 
+ .close {
+     width: 44%;
+     background-color: rgb(253, 36, 36);
+     text-align: center;
+     color: white;
+     padding: 17px 0;
+     border-radius: 7px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .create:hover {
+     color: rgb(231, 231, 231);
+ }
+ 
+ ul {
+     list-style: none;
+     padding-left: 0;
+ }
+ 
+ .list-btns {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .btn-list {
+     padding: 7px 0;
+     width: 30px;
+     background-color: rgb(224, 224, 224);
+     border: rgb(190, 190, 190) 1px solid;
+     text-align: center;
+     margin-right: 3px;
+     margin-bottom: 3px;
+ }
+ 
+ .btn-list:hover {
+     background-color: rgb(0, 147, 167);
+     color: white;
+ }
+ 
+ section {
+     margin-bottom: 150px;
+ }
+ 
+ label {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .btn {
+     margin-top: 4px;
+ }
+ 
+ .corection {
+     width: 40px;
+     padding-left: 0;
+     padding-right: 0;
+ }
+ 
+ @media only screen and (min-width: 380px) {
+     .header-text {
+         font-size: 18px;
+     }
+ }
+ 
+ @media only screen and (min-width: 440px) {
+     .box {
+         width: 35px;
+         height: 35px;
+     }
+     .header-text {
+         font-size: 18px;
+     }
+ }
+ 
+ @media only screen and (min-width: 560px) {
+     .box {
+         width: 40px;
+         height: 40px;
+     }
+     .color-record {
+         font-size: 16px;
+     }
+     .header-text {
+         font-size: 18px;
+     }
+     section {
+         margin-bottom: 160px;
+     }
+ }
